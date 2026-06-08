@@ -9,14 +9,26 @@
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 		<!-- implementando o XML do Ajax para fazer requicições -->
 		<script>
-		function requisitarPaginaURL(){
-			let ajax = new XMLHttpRequest(); 
+		function requisitarPaginaURL(URL){
+			let ajax = new XMLHttpRequest();
+			
+			// requisição não inicializada (state = 0)
+			console.log(ajax.readyState)
 
 			// configura a URL requisitada
-			ajax.open('GET', 'pagina_1_conteudo.html')
+			ajax.open('GET', url, 'pagina_1_conteudo.html')
+			// conexão estabelecida (state = 1)
+			console.log(ajax.readyState)
+
+			// manter a logica para ver o estado
+			ajax.onreadystatechange = () => {
+				// estado que está acontecendo...
+				console.log(ajax.readyState)	
+			}
+
 			ajax.send()
 
-			console.log(ajax)
+			// console.log(ajax)
 		}
 		</script>
 	</head>
@@ -38,9 +50,9 @@
 	    	<div class="row mb-2">
 	    		<div class="col-md-4 center"></div>
 	    		<div class="col-md-4 center">
-	    			<a href="#" class="btn btn-primary">Página 1</a>
-	    			<a href="#" class="btn btn-primary">Página 2</a>
-	    			<a href="#" class="btn btn-primary">Página 3</a>
+	    			<a href="#" class="btn btn-primary" onclick="requisitarPaginaURL('pagina_1_conteudo.html')">Página 1</a>
+	    			<a href="#" class="btn btn-primary" onclick="requisitarPaginaURL('pagina_2_conteudo.html')">Página 2</a>
+	    			<a href="#" class="btn btn-primary" onclick="requisitarPaginaURL('pagina_3_conteudo.html')">Página 3</a>
 	    		</div>
 	    		<div class="col-md-4 center"></div>
 	    	</div>
