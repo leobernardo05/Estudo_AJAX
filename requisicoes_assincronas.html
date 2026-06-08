@@ -11,11 +11,14 @@
 		<script>
 		function requisitarPaginaURL(url){
 			// incluir o gif de loading na página
-			let imgLoading = document.createElement('img')
-			imgLoading.src = 'loading.gif'
-			imgLoading.className = 'rounded mx-auto d-block'
+			if(!document.getElementById('loading')) {
+				let imgLoading = document.createElement('img')
+				imgLoading.id = 'loading'
+				imgLoading.src = 'loading.gif'
+				imgLoading.className = 'rounded mx-auto d-block'
 
-			document.getElementById('conteudo').appendChild(imgLoading)
+				document.getElementById('conteudo').appendChild(imgLoading)
+			}
 
 			let ajax = new XMLHttpRequest();
 			
@@ -31,8 +34,14 @@
 			// manter a logica para ver o estado
 			ajax.onreadystatechange = () => {
 				// estado que está acontecendo...
-				if(ajax.readyState == 4) {
-					
+				if(ajax.readyState == 4 && ajax.status == 200) {
+					console.log('requisição finalizada com sucesso, o status é 200')
+					document.getElementById('loading').remove()
+				}
+
+				if(ajax.readyState == 4 && ajax.status == 40) {
+					console.log('requisição finalizada com sucesso, mas o status é 404')
+					document.getElementById('loading').remove()
 				}
 			}
 
