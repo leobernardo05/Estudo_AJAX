@@ -20,6 +20,7 @@
 				document.getElementById('conteudo').appendChild(imgLoading)
 			}
 
+			// o mais importante até agora!!
 			let ajax = new XMLHttpRequest();
 			
 			// requisição não inicializada (state = 0)
@@ -35,13 +36,13 @@
 			ajax.onreadystatechange = () => {
 				// estado que está acontecendo...
 				if(ajax.readyState == 4 && ajax.status == 200) {
-					console.log('requisição finalizada com sucesso, o status é 200')
-					document.getElementById('loading').remove()
+					document.getElementById('conteudo').innerHTML = ajax.responseText
+					//document.getElementById('loading').remove()
 				}
 
-				if(ajax.readyState == 4 && ajax.status == 40) {
-					console.log('requisição finalizada com sucesso, mas o status é 404')
-					document.getElementById('loading').remove()
+				if(ajax.readyState == 4 && ajax.status == 404) {
+					document.getElementById('conteudo').innerHTML = '... tente novamente mais tarde'
+					//document.getElementById('loading').remove()
 				}
 			}
 
