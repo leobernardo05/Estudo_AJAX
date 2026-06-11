@@ -14,15 +14,137 @@
     </filme>
 
     <filme id="2">
-        <titulo>Onde está segunda</titulo>
-        <resumo>What Happened to Monday é um filme distópico de ficção científica e suspense, escrito por Max Botkin e Kerry Williamson, dirigido por Tommy Wirkola e estrelando Noomi Rapace, Glenn Close, e Willem Dafoe.</resumo>
-        <genero>Ficção científica</genero>
-        <genero>Suspense</genero>
+        <titulo>Capitão América: Guerra Civil</titulo>
+        <resumo>Após um incidente internacional envolvendo os Vingadores resultar em danos colaterais, o governo dos EUA propõe uma legislação para regular a atividade dos super-heróis. O Capitão América se opõe à ideia, enquanto o Homem de Ferro apoia. Isso leva a uma divisão entre os Vingadores, com cada lado recrutando aliados para sua causa.</resumo>
+        <genero>Ação</genero>
+        <genero>Aventura</genero>
         <elenco>
-            <ator>Noomi Rapace</ator>
-            <ator>GLENN CLOSE</ator>
-            <ator>WILLEM DAFOE</ator>
+            <ator>Chris Evans</ator>
+            <ator>Robert Downey Jr</ator>
+            <ator>Scarlett Johansson</ator>
         </elenco>
-        <dataLancamento pais='Franca'>30 de agosto de 2017</dataLancamento>
+        <dataLancamento pais='Brasil'>28 de abril de 2016</dataLancamento>
     </filme>
+
+    <filme id = "3">
+        <titulo>Homem-Aranha: De Volta ao Lar</titulo>
+        <resumo>Após sua experiência com os Vingadores, Peter Parker retorna para casa, onde vive com sua tia May. Sob a orientação de Tony Stark, ele tenta equilibrar sua vida como estudante do ensino médio e super-herói. No entanto, quando o Abutre surge como uma nova ameaça, Peter deve provar que é capaz de ser um herói por conta própria.</resumo>
+        <genero>Ação</genero>
+        <genero>Aventura</genero>
+        <elenco>
+            <ator>Tom Holland</ator>
+            <ator>Michael Keaton</ator>
+            <ator>Zendaya</ator>
+            <ator>Marisa Tomei</ator>
+            <ator>Jon Favreau</ator>
+        </elenco>
+        <dataLancamento pais='Brasil'>6 de julho de 2017</dataLancamento>
+    </filme>
+
+    <filme id = "4">
+        <titulo>Pantera Negra</titulo>
+        <resumo>Após a morte de seu pai, o jovem T'Challa retorna para a nação africana de Wakanda para assumir o trono como rei. No entanto, ele é desafiado por um adversário poderoso que deseja usurpar seu trono e espalhar o poder de Wakanda pelo mundo. T'Challa deve usar suas habilidades e recursos para proteger seu povo e seu legado.</resumo>
+        <genero>Ação</genero>
+        <genero>Aventura</genero>
+        <elenco>
+            <ator>Chadwick Boseman</ator>
+            <ator>Michael B. Jordan</ator>
+            <ator>Lupita Nyong'o</ator>
+            <ator>Danai Gurira</ator>
+            <ator>Letitia Wright</ator>
+        </elenco>
+        <dataLancamento pais='Brasil'>15 de fevereiro de 2018</dataLancamento>
+    </filme>
+
+    <filme id = "5">
+        <titulo>Velozes e furiosos 1</titulo>
+        <resumo>Dom Toretto e sua equipe de corredores de rua enfrentam desafios cada vez maiores, incluindo confrontos com criminosos internacionais e ameaças à segurança global. Com muita ação, perseguições de carros e reviravoltas, a franquia continua a entregar entretenimento emocionante para os fãs de filmes de ação.</resumo>
+        <genero>Ação</genero>
+        <genero>Aventura</genero>
+        <elenco>
+            <ator>Vin Diesel</ator>
+            <ator>Paul Walker</ator>
+            <ator>Dwayne Johnson</ator>
+            <ator>Michelle Rodriguez</ator>
+            <ator>Jordana Brewster</ator>
+            <ator>Tyrese Gibson</ator>
+        </elenco>
+        <dataLancamento pais='Brasil'>3 de abril de 2001</dataLancamento>
+    </filme>
+
+    <filme id = "6">
+        <titulo>Velozes e furiosos 2</titulo>
+        <resumo>Homam e Brian O'Conner se unem para derrubar um traficante de drogas internacional. Com muita ação, perseguições de carros e reviravoltas, a franquia continua a entregar entretenimento emocionante para os fãs de filmes de ação.</resumo>
+        <genero>Ação</genero>
+        <genero>Aventura</genero>
+        <elenco>
+            <ator>Vin Diesel</ator>
+            <ator>Paul Walker</ator>
+            <ator>Dwayne Johnson</ator>
+            <ator>Michelle Rodriguez</ator>
+            <ator>Jordana Brewster</ator>
+            <ator>Tyrese Gibson</ator>
+        </elenco>
+        <dataLancamento pais='Brasil'>6 de junho de 2003</dataLancamento>
+    </filme>
+
+    <filme id = "7">
+        <titulo>Gente Grande</titulo>
+        <resumo>Após a morte de seu treinador de basquete, cinco amigos de infância se reúnem para um fim de semana em uma casa à beira do lago. Durante o fim de semana, eles enfrentam desafios pessoais e redescobrem a importância da amizade e da família.</resumo>
+        <genero>Comédia</genero>
+        <elenco>
+            <ator>Adam Sandler</ator>
+            <ator>Kevin James</ator>
+            <ator>Chris Rock</ator>
+            <ator>David Spade</ator>
+            <ator>Rob Schneider</ator>
+        </elenco>
+        <dataLancamento pais='Brasil'>5 de agosto de 2010</dataLancamento>
+    </filme>
+
+    <filme id = "8">
+        <titulo>Cinderela</titulo>
+        <resumo>Após a morte de seu pai, a jovem Ella é forçada a viver com sua madrasta e suas meias-irmãs, que a tratam como uma serva. Com a ajuda de sua fada madrinha, Ella consegue ir ao baile real, onde conhece o príncipe encantado. No entanto, ela deve deixar o baile antes da meia-noite, quando a magia se desfaz.</resumo>
+        <genero>Fantasia</genero>
+        <genero>Romance</genero>
+        <elenco>
+            <ator>Lily James</ator>
+            <ator>Richard Madden</ator>
+            <ator>Cate Blanchett</ator>
+            <ator>Helena Bonham Carter</ator>
+            <ator>Stellan Skarsgård</ator>
+        </elenco>
+        <dataLancamento pais='Brasil'>2 de abril de 2015</dataLancamento>
+    </filme>
+
+    <filme id = "9">
+        <titulo>O Rei Leão</titulo>
+        <resumo>Simba, um jovem leão, é o herdeiro do trono do reino animal. Após a morte de seu pai, Mufasa, Simba é exilado e deve aprender a sobreviver na selva. Com a ajuda de seus amigos Timão e Pumba, Simba retorna para enfrentar seu tio Scar e reivindicar seu lugar como rei.</resumo>
+        <genero>Animação</genero>
+        <genero>Aventura</genero>
+        <elenco>
+            <ator>Matthew Broderick</ator>
+            <ator>Jeremy Irons</ator>
+            <ator>James Earl Jones</ator>
+            <ator>Moira Kelly</ator>
+            <ator>Nigel Hawthorne</ator>
+        </elenco>
+        <dataLancamento pais='Brasil'>24 de julho de 1994</dataLancamento>
+    </filme>
+
+    <filme id = "10">
+        <titulo>O Poderoso Chefão</titulo>
+        <resumo>O Poderoso Chefão é um filme de crime e drama que segue a história da família Corleone, liderada por Vito Corleone. O filme explora temas de poder, lealdade e corrupção, enquanto a família enfrenta desafios internos e externos para manter seu império criminoso.</resumo>
+        <genero>Crime</genero>
+        <genero>Drama</genero>
+        <elenco>
+            <ator>Marlon Brando</ator>
+            <ator>Al Pacino</ator>
+            <ator>James Caan</ator>
+            <ator>Diane Keaton</ator>
+            <ator>Robert Duvall</ator>
+        </elenco>
+        <dataLancamento pais='Brasil'>7 de março de 1972</dataLancamento>
+    </filme>
+
 </filmes>
