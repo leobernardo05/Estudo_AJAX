@@ -20,7 +20,58 @@
                     domFilmes = parser.parseFromString(XMLFilmes, 'text/xml')
 
                     jsonFilmes = xmlToJson(domFilmes)
+
+                    for (let i in jsonFilmes['filmes']['filme']) {
+                        console.log(jsonFilmes['filmes']['filme'][i])   
+                        
+                        let divRow = document.createElement ('div')
+                        divRow.className = 'row'
+
+                        let divCol = document.createElement('div')
+                        divCol.className = 'col'
+
+                        let p1 = document.createElement('p')
+                        p1.innerHTML = '<p><strong>Título:</strong> Título do filme</p>'
+
+                        let p2 = document.createElement('p')
+                        p2.innerHTML = '<p><strong>Resumo:</strong> Resumo do filme</p>'
+                        
+                        let p3 = document.createElement('p')
+                        p3.innerHTML = '<p><strong>Gênero:</strong> Gênero do filme</p>'
+                        
+                        let p4 = document.createElement('p')
+                        p4.innerHTML = '<p><strong>Elenco:</strong> Elenco do filme</p>'
+                        
+                        let p5 = document.createElement('p')
+                        p5.innerHTML = '<p><strong>Data de lançamento:</strong> Data de lançamento do filme</p>'
+                        
+                        let hr = createElement('hr')
+
+                        divRow.appendChild(divCol)
+                        divCol.appendChild(p1)
+                        divCol.appendChild(p2)
+                        divCol.appendChild(p3)
+                        divCol.appendChild(p4)
+                        divCol.appendChild(p5)
+                        divCol.appendChild(hr)
+
+                        // apresenta a divCol e todos os paragrafos, após colocar a divRow retorna tudo.
+                        document.getElementById('lista').appendChild(divRow)
+                       
+                    }
+                    /*
+                     <div class="row">
+                        <div class="col">
+                            <p><strong>Título:</strong> Titulo do filme</p>
+                            <p><strong>Resumo:</strong> Resumo do filme</p>
+                            <p><strong>Gênero:</strong> Gênero do filme</p>
+                            <p><strong>Elenco:</strong> Elenco do filme</p>
+                            <p><strong>Data de lançamento:</strong> Data do lançamento do filme</p>
+                            <hr>
+                        </div>
+                    </div>*/                
                 }
+
                 if(xmlHttp.readyState == 4 && xmlHttp.status == 404){
                     // ... tratativa de erro
                 }
@@ -37,8 +88,8 @@
                 </div>
             </div>
         </nav>
-        <div class="container">
-            <div class="row">
+        <div class="container" id="lista">
+            <div class="row mb-4">
                 <div class="col">
                     <button type="button" onclick="getFilmes()">Listar filmes</button>
                 </div>
