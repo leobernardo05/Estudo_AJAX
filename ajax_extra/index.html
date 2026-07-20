@@ -40,10 +40,10 @@
 						
 						<div class="form-group">
 							<div class="form-check form-check-inline">
-								<input type="checkbox" name="interesses" value="php" class="form-check-input"><label class="form-check-label mr-3">PHP</label>
-								<input type="checkbox" name="interesses" value="js" class="form-check-input"><label class="form-check-label mr-3">JavaScript</label>
-								<input type="checkbox" name="interesses" value="NodeJS" class="form-check-input"><label class="form-check-label mr-3">NodeJS</label>
-								<input type="checkbox" name="interesses" value="MongoDB" class="form-check-input"><label class="form-check-label mr-3">MongoDB</label>
+								<input type="checkbox" name="interesses[]" value="php" class="form-check-input"><label class="form-check-label mr-3">PHP</label>
+								<input type="checkbox" name="interesses[]" value="js" class="form-check-input"><label class="form-check-label mr-3">JavaScript</label>
+								<input type="checkbox" name="interesses[]" value="NodeJS" class="form-check-input"><label class="form-check-label mr-3">NodeJS</label>
+								<input type="checkbox" name="interesses[]" value="MongoDB" class="form-check-input"><label class="form-check-label mr-3">MongoDB</label>
 							</div>
 						</div>
 						
@@ -51,12 +51,33 @@
 							<textarea name="mensagem" class="form-control"></textarea>
 						</div>
 						
-						<button type="submit" class="btn btn-primary">Enviar</button>
+						<button type="submit" class="btn btn-primary" id="btn">Enviar</button>
 					</form>
 				</div>
 			</div>
 		</div>
 
 	</body>
+
+	<!-- script -->
+	<script>
+		$(document).ready(()=>{
+			$('#btn').on('click', ()=> {
+				e.preventDefault()
+
+				let dados = $('form').serialize();
+				console.log(dados)
+				// ajax
+				$.ajax({
+					type: 'get',
+					url: 'app.php',
+					data: dados, //x-www-form-urlencoded
+					dataType: 'json',
+					success: dados => {console.log(dados)},
+					error: erro => {console.log(erro)}
+				})
+			})
+		})
+	</script>
 
 </html>
